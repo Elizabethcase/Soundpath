@@ -237,7 +237,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 .ui-page-theme-a .ui-panel-wrapper {
 	background-color: #323e4e /*{a-page-background-color}*/;
 	border-color: #25288c /*{a-page-border}*/;
-	color: #333333 /*{a-page-color}*/;
+	color: #f0f0f0 /*{a-page-color}*/;
 }
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
@@ -920,7 +920,10 @@ div.ui-mobile-viewport {
 	border-width: 0;
 	overflow: visible;
 	overflow-x: hidden;
-	padding: 1em;
+	padding-left: 4.5em;
+	padding-right: 4.5em;
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 /* Corner styling for dialogs and popups */
 .ui-corner-all > .ui-header:first-child,
