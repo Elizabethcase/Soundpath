@@ -5,7 +5,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css" />
+	<link rel="stylesheet" href="main.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
@@ -14,15 +14,37 @@
 <div data-role="page" id="home">
 
 	<div data-role="header">
-		<h1>SoundPath</h1>
+		<img src="Soundpathlogo.png" alt="SoundPath" class="logo">
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
 		<!-- Search - need to link to Google (geolocation); change icon -->
 		<form>
-		     <label for="search-5" class="ui-hidden-accessible">Search:</label>
-		     <input type="search" name="search-5" id="search-5" value="" placeholder="San Francisco">
+		     <label for="current" class="ui-hidden-accessible" >Current</label>
+		     <input type="search" name="current" id="current" data-mini="true" value="" placeholder="San Francisco" data-clear-btn="true">
 		</form>
+
+		<form>
+		     <label for="destination">Where are you going?</label>
+		     <input type="search" name="destination" id="destination" data-mini="true" value="" data-clear-btn="true">
+		</form>
+
+		<!-- Walk Bike Drive Transit -->
+		<div class="ui-grid-c center">
+		    <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Walk</a></div>
+		    <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Drive</a></div>
+		    <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all i-btn-inline">Bike</a></div>
+		    <div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext i-btn-inline ui-icon-train">Train</a></div>
+		    <!--<div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext ui-btn-inline">Button</a></div>-->
+		</div>
+
+		<form>
+		    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+		        Make Soundpath
+		        <input type="button" data-enhanced="true" value="Input value">
+		    </div>
+		</form>
+
 	</div><!-- /content -->
 
 	<div data-role="footer">

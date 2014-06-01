@@ -9,6 +9,19 @@
 *
 */
 
+/*Added content*/
+.logo{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+}
+
+.ui-icon-train:after {
+	background-image: url("train.png");
+    /* Make your icon fit */
+    background-size: 13px 20px;
+}
 
 /* Some unsets */
 .ui-mobile,
