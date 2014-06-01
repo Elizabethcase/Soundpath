@@ -232,13 +232,7 @@ html body .ui-group-theme-a .ui-bar-inherit {
 	border-style: solid;
 }
 /* Page and overlay */
-.ui-overlay-a,
-.ui-page-theme-a,
-.ui-page-theme-a .ui-panel-wrapper {
-	background-color: #323e4e /*{a-page-background-color}*/;
-	border-color: #25288c /*{a-page-border}*/;
-	color: #333333 /*{a-page-color}*/;
-}
+
 /* Body: Read-only lists, text inputs, collapsible content */
 .ui-body-a,
 .ui-page-theme-a .ui-body-inherit,
