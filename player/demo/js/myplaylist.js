@@ -9,14 +9,44 @@
 var myPlaylist = [
 
     {
-        mp3:'mix/1.mp3',
-        oga:'mix/1.ogg',
-        title:'Sample',
-        artist:'Sample',
+        mp3:'player/demo/mix/firstsong.mp3',
+        title:'Fighting the Big 3',
+        artist:'StoryCorps',
         rating:4,
-        buy:'#',
-        price:'0.99',
-        duration:'0:30',
-        cover:'mix/1.png'
-    }
+        duration:'4:23',
+        cover:'story-corps.jpg'
+    },
+
+     {
+        mp3:'player/demo/mix/firstsong.mp3',
+        title:'Fighting the Big 3',
+        artist:'StoryCorps',
+        rating:4,
+        duration:'4:23',
+        cover:'story-corps.jpg'
+    },
+    {
+        mp3:'player/demo/mix/firstsong.mp3',
+        title:'Fighting the Big 3',
+        artist:'StoryCorps',
+        rating:4,
+        duration:'4:23',
+        cover:'story-corps.jpg'
+    },
+    {
+        mp3:'player/demo/mix/firstsong.mp3',
+        title:'Fighting the Big 3',
+        artist:'StoryCorps',
+        rating:4,
+        duration:'4:23',
+        cover:'story-corps.jpg'
+    },
+    {
+        mp3:'player/demo/mix/firstsong.mp3',
+        title:'Fighting the Big 3',
+        artist:'StoryCorps',
+        rating:4,
+        duration:'4:23',
+        cover:'story-corps.jpg'
+    },
 ];
