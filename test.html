@@ -14,7 +14,7 @@
 <div data-role="page" id="home">
 
 	<div data-role="header">
-		<img src="Soundpathlogo.png" alt="SoundPath" class="logo">
+		<img src="images/Soundpathlogo.png" alt="SoundPath" class="logo">
 	</div><!-- /header -->
 
 	<div role="main" class="ui-content">
@@ -31,10 +31,11 @@
 
 		<!-- Walk Bike Drive Transit -->
 		<div class="ui-grid-c center">
-		    <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Walk</a></div>
-		    <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Drive</a></div>
-		    <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all i-btn-inline">Bike</a></div>
-		    <div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext i-btn-inline ui-icon-train">Train</a></div>
+		    
+		    <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-walk">Walk</a></div>
+		    <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-car">Drive</a></div>
+		    <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-bike">Bike</a></div>
+		    <div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-train">Train</a></div>
 		    <!--<div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext ui-btn-inline">Button</a></div>-->
 		</div>
 
@@ -51,6 +52,15 @@
 		<h4>RJI Hackathon 2014</h4>
 	</div><!-- /footer -->
 </div><!-- /page Home-->
+
+<!--playlist page-->
+<div data-role="page" id="playlist">
+	<audio controls>
+  		<source src="horse.mp3" type="audio/mpeg">
+  		<source src="horse.ogg" type="audio/ogg">
+  		<embed height="50" width="100" src="horse.mp3">
+	</audio>
+</div>
 
 </body>
 </html>

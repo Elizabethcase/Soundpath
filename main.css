@@ -17,10 +17,26 @@
 	margin-top:20px;
 }
 
-.ui-icon-train:after {
-	background-image: url("train.png");
+.ui-icon-train:after, .ui-icon-walk:after, .ui-icon-bike:after, .ui-icon-car:after {
+
     /* Make your icon fit */
-    background-size: 13px 20px;
+    background-size: 18px 18px;
+}
+
+.ui-icon-train:after {
+	background-image: url("images/train.png");
+}
+
+.ui-icon-car:after {
+	background-image: url("images/car.png");
+}
+
+.ui-icon-walk:after {
+	background-image: url("images/walk.png");
+}
+
+.ui-icon-bike:after {
+	background-image: url("images/bike.png");
 }
 
 /* Some unsets */
