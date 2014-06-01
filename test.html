@@ -4,8 +4,10 @@
 	<title>Page Title</title>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" href="css/themes/my-custom-theme.css" />
+    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
 	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="custom.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
@@ -30,14 +32,18 @@
 		</form>
 
 		<!-- Walk Bike Drive Transit -->
-		<div class="ui-grid-c center">
-		    
-		    <div class="ui-block-a"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-walk">Walk</a></div>
-		    <div class="ui-block-b"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-car">Drive</a></div>
-		    <div class="ui-block-c"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-bike">Bike</a></div>
-		    <div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-btn-icon-notext ui-btn-inline ui-icon-train">Train</a></div>
-		    <!--<div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all ui-icon-arrow-r ui-btn-icon-notext ui-btn-inline">Button</a></div>-->
-		</div>
+	<form class="transport">
+	    <fieldset data-role="controlgroup" data-type="horizontal" class="transport">
+	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
+	        <label for="radio-choice-h-2a">Walk</label>
+	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2b" value="off">
+	        <label for="radio-choice-h-2b">Bike</label>
+	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2c" value="other">
+	        <label for="radio-choice-h-2c">Car</label>
+	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2d" value="other">
+	        <label for="radio-choice-h-2d">Train</label>
+	    </fieldset>
+	</form>
 
 		<form>
 		    <div class="ui-input-btn ui-btn ui-corner-all ui-shadow">
@@ -48,7 +54,7 @@
 
 	</div><!-- /content -->
 
-	<div data-role="footer">
+	<div data-role="footer" class="footer_cust">
 		<h4>RJI Hackathon 2014</h4>
 	</div><!-- /footer -->
 </div><!-- /page Home-->
@@ -60,6 +66,11 @@
   		<source src="horse.ogg" type="audio/ogg">
   		<embed height="50" width="100" src="horse.mp3">
 	</audio>
+</div>
+
+<!--map page-->
+<div data-role="page" id="map">
+	<img src="images/map.png">
 </div>
 
 </body>
