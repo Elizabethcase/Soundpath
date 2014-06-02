@@ -31,10 +31,10 @@
 		<img src="images/SoundPathlogoRED.png" alt="SoundPath" class="logo">
 	</div><!-- /header -->
 
-	<div role="main" class="ui-content">
-		<!-- Search - need to link to Google (geolocation); change icon -->
+	<div role="main" class="ui-content" id="top">
+			<h4>Get Current Location <img class="smaller_icons" src="images/pin.png"></h4>
 		<form>
-		     <label for="current" class="ui-hidden-accessible" >Current</label>
+		     <label for="current" class="ui-hidden-accessible"  ></label>
 		     <input type="search" name="current" id="current" data-mini="true" value="" placeholder="San Francisco" data-clear-btn="true">
 		</form>
 
@@ -42,9 +42,25 @@
 		     <label for="destination" class="text">Where are you going?</label>
 		     <input type="search" name="destination" id="destination" data-mini="true" value="" data-clear-btn="true">
 		</form>
-
+		<div class="transport">
+		<img class="small_icons focus" src="images/bike.png">
+		<img class="small_icons" src="images/walk.png">
+		<img class="small_icons" src="images/train.png">
+		<img class="small_icons" src="images/car.png">
+	</div>
+	<script>
+		$(".small_icons").click(function(){
+			$(".small_icons", ".transport").removeClass("focus")
+			$(this).addClass("focus")
+		})
+		$(".smaller_icons").click(function(){
+			console.log("I was clicked")
+			$("#current").val("Crete, IL")
+		})
+	
+	</script>
 		<!-- Walk Bike Drive Transit -->
-	<form class="transport">
+	<!-- <form class="transport">
 	    <fieldset data-role="controlgroup" data-type="horizontal" class="transport">
 	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2a" value="on" checked="checked">
 	        <label for="radio-choice-h-2a">Walk</label>
@@ -55,7 +71,7 @@
 	        <input type="radio" name="radio-choice-h-2" id="radio-choice-h-2d" value="other">
 	        <label for="radio-choice-h-2d">Train</label>
 	    </fieldset>
-	</form>
+	</form> -->
 
 	<a href=#map class="ui-btn ui-corner-all">Make SoundPath</a>
 
@@ -94,7 +110,9 @@
 	<a href=#playlist class="ui-btn ui-corner-all">View Playlist</a>
 
 	<div class="fake">
+		<div class="mobilediv">
 		<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zFhXN7YcgoGA.kzY0Lpyi8A8s" width="100%" height="100%"></iframe>
+	</div>
 	</div>
 
 
